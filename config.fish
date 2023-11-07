@@ -14,6 +14,8 @@ alias gco="git checkout"
 alias gac="git ac"
 alias gpl="git pull origin"
 alias gps="git push origin"
+alias pip=pip3
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # set FISHCONFIG ~/.config/fishl
 
