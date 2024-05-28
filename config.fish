@@ -12,6 +12,7 @@ function ll
 alias g=git
 alias gco="git checkout"
 alias gac="git ac"
+alias gc="git commit -m"
 alias glo="git log --oneline"
 alias gpl="git pull origin"
 alias gps="git push origin"
