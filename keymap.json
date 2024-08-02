@@ -1,0 +1,73 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: Open Default Keymap`
+// from the command palette.
+[
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore" // remap jk in insert mode to escape.
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "cmd-j": "pane::ActivatePrevItem",
+      "cmd-k": "pane::ActivateNextItem",
+      "g d": "editor::GoToDefinition",
+      "cmd-shift-n": "workspace::NewFile"
+    }
+  },
+  {
+    "context": "BufferSearchBar && !in_replace > Editor",
+    "bindings": {
+      "enter": "search::SelectNextMatch",
+      "shift-enter": "search::SelectPrevMatch"
+    }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      "cmd-n": "search::SelectNextMatch",
+      "cmd-p": "search::SelectPrevMatch",
+      "alt-m": "assistant::ToggleModelSelector"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4],
+      "cmd-6": ["pane::ActivateItem", 5],
+      "cmd-7": ["pane::ActivateItem", 6],
+      "cmd-8": ["pane::ActivateItem", 7],
+      "cmd-9": ["pane::ActivateItem", 8],
+      "cmd-0": "pane::ActivateLastItem",
+      "ctrl--": "pane::GoBack",
+      "ctrl-shift--": "pane::GoForward",
+      "cmd-shift-t": "pane::ReopenClosedItem",
+      "cmd-shift-f": "project_search::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "cmd-n": "search::PreviousHistoryQuery",
+      "cmd-p": "search::NextHistoryQuery"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "cmd-shift-o": "outline::Toggle",
+      "cmd-g": "go_to_line::Toggle"
+    }
+  }
+]

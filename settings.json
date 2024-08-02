@@ -7,18 +7,23 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "cursor_blink": true,
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_family": "Ubuntu Mono",
   "buffer_font_weight": 800,
+  "relative_line_numbers": true,
   "format_on_save": "on",
+  "show_whitespaces": "boundary",
   "git": {
-    "git_gutter": null,
+    "git_gutter": "tracked_files",
     "gutter_debounce": null,
-    "inline_blame": null
+    "inline_blame": {}
   },
+  "show_inline_completions": true,
   "git_diff": true,
+  "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -28,5 +33,8 @@
     "font_size": 16,
     "font_family": "Ubuntu Mono",
     "font_weight": 800
+  },
+  "scrollbar": {
+    "git_diff": true
   }
 }
