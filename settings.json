@@ -17,6 +17,11 @@
   "formatter": "prettier",
   "format_on_save": "prettier",
   "show_whitespaces": "boundary",
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true
+  },
   "git": {
     "git_gutter": "tracked_files",
     "gutter_debounce": null,
