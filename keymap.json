@@ -9,7 +9,8 @@
   {
     "context": "vim_mode == insert",
     "bindings": {
-      "j k": "vim::NormalBefore" // remap jk in insert mode to escape.
+      "j k": "vim::NormalBefore", // remap jk in insert mode to escape.
+      "k k": "vim::InsertLineAbove"
     }
   },
   {
@@ -71,3 +72,4 @@
     }
   }
 ]
+
