@@ -7,6 +7,11 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+  "hover_popover_enabled": true,
   "cursor_blink": true,
   "vim_mode": true,
   "ui_font_size": 16,
@@ -15,6 +20,7 @@
   "buffer_font_weight": 800,
   "relative_line_numbers": true,
   "formatter": "prettier",
+  "ensure_final_newline_on_save": true,
   "format_on_save": "prettier",
   "show_whitespaces": "boundary",
   "tabs": {
