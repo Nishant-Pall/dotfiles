@@ -9,6 +9,7 @@ function ll
 
 #alias vim=nvim
 #alias vi=nvim
+alias c=clear
 alias g=git
 alias gco="git checkout"
 alias gac="git ac"
